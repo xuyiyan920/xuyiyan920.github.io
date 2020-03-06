@@ -1,89 +1,320 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="业精于勤而荒于嬉，行成于思而毁于随">
+<meta name="theme-color" content="#000">
 <title>基本信息 | xuyiyan920的博客</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://xuyiyan920.github.io/favicon.ico?v=1583478044757">
+<link rel="shortcut icon" href="https://xuyiyan920.github.io/favicon.ico?v=1583480310917">
 <link rel="stylesheet" href="https://xuyiyan920.github.io/styles/main.css">
 
+<link rel="stylesheet" href="/media/css/pisces.css">
 
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link href="/media/hljs/styles/androidstudio.css" rel="stylesheet">  
 
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 
-
-    <meta name="description" content="{∣∣∣∣050100基础信用:100+练习情况:11+社区贡献:0+比赛情况:2+获得成就:20+总估值:133\def{\cGreen}{#52C41A}  \def{\cOrange}{#F39C11}
-\def{\cYellow}{..." />
-    <meta name="keywords" content="" />
+    <meta name="description" content="基本信息" />
+    <meta name="keywords" content="洛谷,个人介绍" />
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://xuyiyan920.github.io">
-        <img src="https://xuyiyan920.github.io/images/avatar.png?v=1583478044757" class="site-logo">
-        <h1 class="site-title">xuyiyan920的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      
+<div class=" pisces">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
       </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>xuyiyan920的博客</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">业精于勤而荒于嬉，行成于思而毁于随</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            <li class="nav-item ">
+              
+                <a href="https://xuyiyan920.github.io">
+                  <i class="fa fa-globe"></i> 主页
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="https://xuyiyan920.github.io/archives">
+                  <i class="fa fa-globe"></i> 文章列表
+                </a>
+              
+            </li>
+          
+          <li class="nav-item">
+            <a>
+              <i class="fa fa-search"></i> 搜索
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div>
-      
-        
-          <a href="https://xuyiyan920.github.io" class="site-nav">
-            主页
-          </a>
-        
-      
-        
-          <a href="https://xuyiyan920.github.io" class="site-nav">
-            洛谷
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      业精于勤而荒于嬉，行成于思而毁于随
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://xuyiyan920.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+  </header>
 </div>
 
+<script type="text/javascript"> 
+ 
+  let showNav = true;
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">基本信息</h2>
-            <div class="post-date">2020-03-06</div>
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      
+      <div class="section-layout pisces ">
+        <div class="section-layout-wrapper">
+          
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body pisces" id="sidebar_body">
+        
+          
             
-            <div class="post-content" v-pre>
-              <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="white"><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#A9A9A9"><mspace width="0.4em"/><mrow><mo fence="true">∣</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mpadded voffset="90pt"><mrow></mrow></mpadded><mspace width="13.816658267716537em"/></mrow></mstyle></mtd></mtr></mtable><mo fence="true">∣</mo></mrow><mspace width="-0.55em"/><mrow><mo fence="true">∣</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mpadded voffset="90pt"><mrow></mrow></mpadded><mspace width="13.816658267716537em"/></mrow></mstyle></mtd></mtr></mtable><mo fence="true">∣</mo></mrow></mstyle></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mstyle mathsize="0.7em"><mspace width="0.5714285714285715em"/><mtext>0</mtext><mspace width="19.591754780652423em"/><mtext>50</mtext><mspace width="19.103993250843647em"/><mtext>100</mtext></mstyle></mstyle></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">基础信用:</mtext><mtext>100</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#52C41A"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="28.45275590551181em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">练习情况:</mtext><mtext>11</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="3.1298031496062992em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">社区贡献:</mtext><mtext>0</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="0em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">比赛情况:</mtext><mtext>2</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="0.5690551181102362em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">获得成就:</mtext><mtext>20</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="5.690551181102363em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mrow><mtext mathvariant="bold">总估值:</mtext><mspace width="1em"/><mtext mathvariant="bold">133</mtext></mrow></mstyle></mstyle></mtd></mtr></mtable></mrow></mstyle></mstyle></mstyle></menclose><mspace linebreak="newline"></mspace></mrow><annotation encoding="application/x-tex">\def{\cGreen}{#52C41A}  \def{\cOrange}{#F39C11}
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="https://xuyiyan920.github.io/images/avatar.png"/>
+    <p class="site-author-name">xuyiyan920的博客</p>
+    <p class="site-description right-motion"> </p>
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://xuyiyan920.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="">
+              <i class="fa fa-qq"></i> QQ
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+
+</div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+          <div class="section-box box-shadow-wrapper">
+            <div class="section bg-color post post-page">
+              <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://xuyiyan920.github.io/post/ji-ben-xin-xi/">
+      基本信息
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-03-06</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://xuyiyan920.github.io/tag/gIAupnBWH/">
+              <span>洛谷</span>
+            </a>、
+          
+        
+          
+            <a href="https://xuyiyan920.github.io/tag/GD5hdBwWu/">
+              <span>个人介绍</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>3分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>523<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+              <div class="post-body next-md-body" id="post_body">
+                <p>账号：<a href="https://www.luogu.com.cn/user/116750">xyy920</a></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="white"><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#A9A9A9"><mspace width="0.4em"/><mrow><mo fence="true">∣</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mpadded voffset="90pt"><mrow></mrow></mpadded><mspace width="13.816658267716537em"/></mrow></mstyle></mtd></mtr></mtable><mo fence="true">∣</mo></mrow><mspace width="-0.55em"/><mrow><mo fence="true">∣</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mpadded voffset="90pt"><mrow></mrow></mpadded><mspace width="13.816658267716537em"/></mrow></mstyle></mtd></mtr></mtable><mo fence="true">∣</mo></mrow></mstyle></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mstyle mathsize="0.7em"><mspace width="0.5714285714285715em"/><mtext>0</mtext><mspace width="19.591754780652423em"/><mtext>50</mtext><mspace width="19.103993250843647em"/><mtext>100</mtext></mstyle></mstyle></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">基础信用:</mtext><mtext>100</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#52C41A"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="28.45275590551181em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">练习情况:</mtext><mtext>11</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="3.1298031496062992em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">社区贡献:</mtext><mtext>0</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="0em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">比赛情况:</mtext><mtext>2</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="0.5690551181102362em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mtext mathvariant="bold">获得成就:</mtext><mtext>20</mtext></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><menclose notation="box" mathbackground="#E74C3C"><mstyle mathsize="1em"><mphantom width="0px"><mtext>+</mtext></mphantom><mspace width="5.690551181102363em"/></mstyle></menclose></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mstyle mathcolor="#000000"><mrow><mtext mathvariant="bold">总估值:</mtext><mspace width="1em"/><mtext mathvariant="bold">133</mtext></mrow></mstyle></mstyle></mtd></mtr></mtable></mrow></mstyle></mstyle></mstyle></menclose><mspace linebreak="newline"></mspace></mrow><annotation encoding="application/x-tex">\def{\cGreen}{#52C41A}  \def{\cOrange}{#F39C11}
 \def{\cYellow}{#FADB14} \def{\cRed}{#E74C3C} 
 \def{\colorOfLine}{#A9A9A9} \def{\colorOfDivide}{#000000}
 \def{\colorOfName}{#000000} \def{\colorOfBox}{#000000}
@@ -137,42 +368,232 @@
 } 
 \main{2}{53}{98}{40}{20}{21}{3}{0}{237} 
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:19.396077499999997em;vertical-align:-9.39002em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:10.006057499999997em;"><span style="top:-21.396077499999997em;"><span class="pstrut" style="height:21.396077499999997em;"></span><span class="mord boxpad"><span class="mord"><span class="minner" style="color:white;"><span class="mopen" style="color:white;"><span class="delimsizing mult" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:9.550019999999995em;"><span style="top:5.00001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:5.00001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:4.700010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:4.40001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:4.100010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:3.8000100000000008em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:3.500010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:3.200010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:2.9000100000000013em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:2.6000100000000015em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:2.3000100000000017em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:2.000010000000002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:1.700010000000002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:1.4000100000000022em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:1.1000100000000024em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:0.8000100000000026em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:0.5000100000000027em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:0.2000100000000029em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.09998999999999691em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.39998999999999674em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.6999899999999966em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.9999899999999964em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.2999899999999964em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.5999899999999965em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.8999899999999965em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.1999899999999966em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.150009999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.300009999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.600009999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.900009999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.200009999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.500009999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.800009999999997em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.100009999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.400009999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.700009999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-7.000009999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-7.300009999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-7.600009999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-7.900009999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-8.200009999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-8.500009999999994em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-8.800009999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-9.100009999999994em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-9.400009999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-9.700009999999994em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-10.000009999999994em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-10.300009999999993em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-10.600009999999994em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-10.900009999999993em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-11.200009999999994em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-11.500009999999994em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-11.800019999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:9.05002em;"><span></span></span></span></span></span></span><span class="mord" style="color:white;"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:9.666057499999999em;"><span style="top:-9.933942499999999em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"></span></span><span style="top:-17.945942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"></span></span><span style="top:-16.2059425em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">灰</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">2</span></span></span></span><span style="top:-14.465942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">红</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">53</span></span></span></span><span style="top:-12.725942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">橙</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">98</span></span></span></span><span style="top:-10.985942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">黄</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">40</span></span></span></span><span style="top:-9.245942499999996em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">绿</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">20</span></span></span></span><span style="top:-7.505942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">蓝</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">21</span></span></span></span><span style="top:-5.765942499999999em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">紫</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">3</span></span></span></span><span style="top:-4.0259425em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">黑</span><span class="mord textbf" style="color:#000000;">:</span></span><span class="mord text" style="color:#000000;"><span class="mord" style="color:#000000;">0</span></span></span></span><span style="top:-2.285942500000002em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord text" style="color:#000000;"><span class="mord textbf cjk_fallback" style="color:#000000;">总题量</span><span class="mord textbf" style="color:#000000;">:</span><span class="mspace" style="color:#000000;margin-right:1em;"></span><span class="mord textbf" style="color:#000000;">237</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:7.433942499999997em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:9.666057499999999em;"><span style="top:-9.933942499999999em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mspace" style="color:#A9A9A9;margin-right:0.4em;"></span><span class="minner" style="color:#A9A9A9;"><span class="mopen" style="color:#A9A9A9;"><span class="delimsizing mult" style="color:#A9A9A9;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:7.287884999999998em;"><span style="top:4.044115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:3.438115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.832115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.226115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.6201150000000002em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.0141150000000003em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:0.40811500000000045em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.19788499999999942em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.8038849999999993em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-1.4098849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.015884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.621884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.2278849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.833884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-4.4398849999999985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.045884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.651884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.257884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.863884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-7.469884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.075885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.681884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-9.287885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:6.6501149999999996em;"><span></span></span></span></span></span></span><span class="mord" style="color:#A9A9A9;"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:7.279999999999999em;"><span style="top:-9.28em;"><span class="pstrut" style="height:15.700000000000001em;"></span><span class="mord" style="color:#A9A9A9;"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:13.700000000000001em;"><span style="top:-15.700000000000001em;"><span class="pstrut" style="height:2em;"></span><span class="mord text" style="color:#A9A9A9;"></span></span></span></span></span><span class="mspace" style="color:#A9A9A9;margin-right:13.816658267716537em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:6.780000000000001em;"><span></span></span></span></span></span></span></span><span class="mclose" style="color:#A9A9A9;"><span class="delimsizing mult" style="color:#A9A9A9;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:7.287884999999998em;"><span style="top:4.044115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:3.438115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.832115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.226115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.6201150000000002em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.0141150000000003em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:0.40811500000000045em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.19788499999999942em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.8038849999999993em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-1.4098849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.015884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.621884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.2278849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.833884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-4.4398849999999985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.045884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.651884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.257884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.863884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-7.469884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.075885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.681884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-9.287885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:6.6501149999999996em;"><span></span></span></span></span></span></span></span><span class="mspace" style="color:white;margin-right:0.16666666666666666em;"></span><span class="mspace" style="color:#A9A9A9;margin-right:-0.55em;"></span><span class="minner" style="color:#A9A9A9;"><span class="mopen" style="color:#A9A9A9;"><span class="delimsizing mult" style="color:#A9A9A9;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:7.287884999999998em;"><span style="top:4.044115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:3.438115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.832115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.226115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.6201150000000002em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.0141150000000003em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:0.40811500000000045em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.19788499999999942em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.8038849999999993em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-1.4098849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.015884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.621884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.2278849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.833884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-4.4398849999999985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.045884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.651884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.257884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.863884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-7.469884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.075885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.681884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-9.287885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:6.6501149999999996em;"><span></span></span></span></span></span></span><span class="mord" style="color:#A9A9A9;"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:7.279999999999999em;"><span style="top:-9.28em;"><span class="pstrut" style="height:15.700000000000001em;"></span><span class="mord" style="color:#A9A9A9;"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:13.700000000000001em;"><span style="top:-15.700000000000001em;"><span class="pstrut" style="height:2em;"></span><span class="mord text" style="color:#A9A9A9;"></span></span></span></span></span><span class="mspace" style="color:#A9A9A9;margin-right:13.816658267716537em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:6.780000000000001em;"><span></span></span></span></span></span></span></span><span class="mclose" style="color:#A9A9A9;"><span class="delimsizing mult" style="color:#A9A9A9;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:7.287884999999998em;"><span style="top:4.044115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:3.438115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.832115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:2.226115em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.6201150000000002em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:1.0141150000000003em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:0.40811500000000045em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.19788499999999942em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-0.8038849999999993em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-1.4098849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.015884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.621884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.2278849999999992em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.833884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-4.4398849999999985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.045884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-5.651884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.257884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-6.863884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-7.469884999999999em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.075885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-8.681884999999998em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-9.287885em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:6.6501149999999996em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-17.945942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mspace sizing reset-size6 size3" style="color:#000000;margin-right:0.5714285714285715em;"></span><span class="mord text sizing reset-size6 size3" style="color:#000000;"><span class="mord" style="color:#000000;">0</span></span><span class="mspace sizing reset-size6 size3" style="color:#000000;margin-right:19.591754780652423em;"></span><span class="mord text sizing reset-size6 size3" style="color:#000000;"><span class="mord" style="color:#000000;">50</span></span><span class="mspace sizing reset-size6 size3" style="color:#000000;margin-right:19.103993250843647em;"></span><span class="mord text sizing reset-size6 size3" style="color:#000000;"><span class="mord" style="color:#000000;">100</span></span></span></span><span style="top:-16.2059425em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#C3C3C3;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:0.5690551181102362em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span><span style="top:-14.465942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#E74C3C;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:15.07996062992126em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span><span style="top:-12.725942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#F39C11;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:27.883700787401576em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span><span style="top:-10.985942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#FADB14;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:11.381102362204725em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span><span style="top:-9.245942499999996em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#52C41A;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:5.690551181102363em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span><span style="top:-7.505942499999997em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#2137F5;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:5.97507874015748em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span><span style="top:-5.765942499999999em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#C325DE;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:0.8535826771653543em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span><span style="top:-4.0259425em;"><span class="pstrut" style="height:9.287885em;"></span><span class="mord" style="color:white;"><span class="mord" style="color:white;"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.92333em;"><span style="top:-2.92333em;"><span class="pstrut" style="height:3.34666em;"></span><span class="stretchy fcolorbox" style="color:white;height:1.34666em;background-color:#3112A5;border-color:#000000;"></span></span><span style="top:-3.34666em;"><span class="pstrut" style="height:3.34666em;"></span><span class="mord boxpad" style="color:white;"><span class="mord rlap" style="color:white;"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord" style="color:transparent;">+</span></span></span><span class="fix"></span></span><span class="mspace" style="color:white;margin-right:0em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42333000000000004em;"><span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:6.133942500000002em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span style="top:-12.006057499999997em;"><span class="pstrut" style="height:21.396077499999997em;"></span><span class="stretchy fbox" style="height:19.396077499999997em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:9.39002em;"><span></span></span></span></span></span></span><span class="mspace newline"></span></span></span></span></p>
+<hr>
+<ul>
+<li>
+<p>2018/07/27 洛谷注册祭</p>
+</li>
+<li>
+<p>2018/09/27 洛谷AC50题祭</p>
+</li>
+<li>
+<p>2018/11/08 洛谷AC100题祭</p>
+</li>
+<li>
+<p>2019/03/10 洛谷AC150题祭</p>
+</li>
+<li>
+<p>2019/08/20 洛谷AC200题祭</p>
+</li>
+<li>
+<p>2019/08/23 洛谷提交1k祭</p>
+</li>
+<li>
+<p>2019/11/16 参加CSP2019</p>
+</li>
+</ul>
 
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      xuyiyan920的博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://xuyiyan920.github.io/post/ji-ben-xin-xi/" title="基本信息">基本信息</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://xuyiyan920.github.io/tag/gIAupnBWH/"># 洛谷</a>
+    
+      <a href="https://xuyiyan920.github.io/tag/GD5hdBwWu/"># 个人介绍</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+    </div>
+  </div>
+</div>
+              
+                
+              
             </div>
-            
-            
-
-            
-
           </div>
-
         </div>
       </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By HsxyHao
     </div>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="pisces back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+    <div class="bg-img">
+      <img src="\media\images\custom-bgImg.jpg" />
+    </div>
+  
+  
+  
+</div>
+<script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
 
-AOS.init();
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
 
 </script>
-
-
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
-
-
-
-
+    </div>
   </body>
+  <script src="/media/js/motion.js"></script>
 </html>
