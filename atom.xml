@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xuyiyan920.github.io</id>
-    <title>xyy920（xuyiyan920）的博客</title>
-    <updated>2020-03-06T02:43:38.828Z</updated>
+    <title>xuyiyan920的博客</title>
+    <updated>2020-03-06T03:07:06.572Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xuyiyan920.github.io"/>
     <link rel="self" href="https://xuyiyan920.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>业精于勤而荒于嬉，行成于思而毁于随</subtitle>
     <logo>https://xuyiyan920.github.io/images/avatar.png</logo>
     <icon>https://xuyiyan920.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, xyy920（xuyiyan920）的博客</rights>
+    <rights>All rights reserved 2020, xuyiyan920的博客</rights>
 </feed>
