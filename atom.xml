@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xuyiyan920.github.io</id>
     <title>xuyiyan920的博客</title>
-    <updated>2020-03-07T04:11:31.123Z</updated>
+    <updated>2020-04-12T00:59:04.610Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xuyiyan920.github.io"/>
     <link rel="self" href="https://xuyiyan920.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://xuyiyan920.github.io/images/avatar.png</logo>
     <icon>https://xuyiyan920.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, xuyiyan920的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[自律flag]]></title>
+        <id>https://xuyiyan920.github.io/post/zi-lu-flag/</id>
+        <link href="https://xuyiyan920.github.io/post/zi-lu-flag/">
+        </link>
+        <updated>2020-04-12T00:57:54.000Z</updated>
+        <content type="html"><![CDATA[<p>在这里立下自己的自律flag:<br>
+1.每天6点起，23点睡<br>
+2.每天百词斩20个新词+旧词复习<br>
+3.每天手机仅限于看QQ动态，微信中气爱，支付宝蚂蚁森林，蚂蚁庄园，酷狗听歌，浏览器搜狐，以上使用时间不超过30分钟<br>
+4.ipad仅限于假期玩部落冲突收资源，升级<br>
+5.其余时间用于学习</p>
+<p>一心向学</p>
+<p>最终目标：年级第一，NOIP提高组国一，清华大学</p>
+<p>许艺严<br>
+2020年4月12日于连云港，其时为少二年级第二学期开学考结束次日，以此勉之</p>
+<p>愿不负韶华，终有所成，青春不悔</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[基本信息]]></title>
         <id>https://xuyiyan920.github.io/post/ji-ben-xin-xi/</id>
