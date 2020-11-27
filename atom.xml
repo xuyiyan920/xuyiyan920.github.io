@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xuyiyan920.github.io</id>
     <title>xuyiyan920的博客</title>
-    <updated>2020-04-12T01:08:49.000Z</updated>
+    <updated>2020-11-27T16:15:10.150Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xuyiyan920.github.io"/>
     <link rel="self" href="https://xuyiyan920.github.io/atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://xuyiyan920.github.io/images/avatar.png</logo>
     <icon>https://xuyiyan920.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, xuyiyan920的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.11.27总结]]></title>
+        <id>https://xuyiyan920.github.io/post/20201127-zong-jie/</id>
+        <link href="https://xuyiyan920.github.io/post/20201127-zong-jie/">
+        </link>
+        <updated>2020-11-27T16:01:42.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="p3938-斐波那契">P3938 斐波那契</h1>
+<pre><code>https://www.luogu.com.cn/problem/P3938
+然而这题我又是苦思冥想了两天最终决定看题解了。。。这题是显然的LCA但是我一直没有找到找父亲的方法，曾经以为是模拟然后走了很多弯路。然而我认为，这题确实可以用模拟做，但是非常繁琐。
+这题的正解是，每一个节点a，其父亲都为a-x，x为小于a的最大的斐波那契数。
+证明显然，每次儿子的编号都是从父亲编号小到大，所以自然父亲和儿子差的也就是上一轮新增的儿子数了。
+应多加强对规律的探寻，多写多列举，也要用数学的方法推出来。
+</code></pre>
+<p>#P4281 [AHOI2008]紧急集合 / 聚会<br>
+https://www.luogu.com.cn/problem/P4281<br>
+这题也是LCA好题，我想了一个半小时，中间一度思维混乱想要睡觉（机房空调太暖和了）。总之，这题我的解法与正解大体相同，仅在最后计算答案时略显繁琐。<br>
+大概就是注意到x,y,z三点，LCA(x,y)与LCA(x,z)必在x到根的路径上，它们要么相同要么不同，而不同时为了使距离最短，应选取较深的那个点（因为反之则两点中间的距离会有两个点经过，这样只有一个，可以保证最优）。然后简单画一个树理解编写即可。<br>
+正解明天再写吧，题解还没看呢，我去睡觉了。。。。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[自律flag]]></title>
         <id>https://xuyiyan920.github.io/post/zi-lu-flag/</id>

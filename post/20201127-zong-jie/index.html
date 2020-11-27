@@ -6,7 +6,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="业精于勤而荒于嬉，行成于思而毁于随">
 <meta name="theme-color" content="#000">
-<title>自律flag | xuyiyan920的博客</title>
+<title>2020.11.27总结 | xuyiyan920的博客</title>
 <link rel="shortcut icon" href="https://xuyiyan920.github.io/favicon.ico?v=1606493702960">
 <link rel="stylesheet" href="https://xuyiyan920.github.io/styles/main.css">
 
@@ -25,7 +25,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-    <meta name="description" content="自律flag" />
+    <meta name="description" content="2020.11.27总结" />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -126,7 +126,8 @@
       <div class="sidebar-body pisces" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://xuyiyan920.github.io/images/avatar.png"/>
@@ -181,6 +182,177 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#p3938-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91">P3938 斐波那契</a></li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop + 10;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
           
         
       </div>
@@ -268,8 +440,8 @@
             <div class="section bg-color post post-page">
               <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://xuyiyan920.github.io/post/zi-lu-flag/">
-      自律flag
+    <a class="post-title-link" href="https://xuyiyan920.github.io/post/20201127-zong-jie/">
+      2020.11.27总结
     </a>
   </h1>
   <div class="post-meta">
@@ -277,34 +449,35 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-04-12</span>
+      <span>2020-11-28</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>2分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>177<span class="pc-show">字数</span></span>
+      <span>394<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
               <div class="post-body next-md-body" id="post_body">
-                <p>在这里立下自己的自律flag:<br>
-1.每天6点起，23点睡<br>
-2.每天百词斩20个新词+旧词复习<br>
-3.每天手机仅限于看QQ动态，微信中气爱，支付宝蚂蚁森林，蚂蚁庄园，酷狗听歌，浏览器搜狐，以上使用时间不超过30分钟<br>
-4.ipad仅限于假期玩部落冲突收资源，升级<br>
-5.其余时间用于学习</p>
-<p>一心向学</p>
-<p>最终目标：年级第一，NOIP提高组国一，清华大学</p>
-<p>许艺严<br>
-2020年4月12日于连云港，其时为少二年级第二学期开学考结束次日，以此勉之</p>
-<p>愿不负韶华，终有所成，青春不悔</p>
+                <h1 id="p3938-斐波那契">P3938 斐波那契</h1>
+<pre><code>https://www.luogu.com.cn/problem/P3938
+然而这题我又是苦思冥想了两天最终决定看题解了。。。这题是显然的LCA但是我一直没有找到找父亲的方法，曾经以为是模拟然后走了很多弯路。然而我认为，这题确实可以用模拟做，但是非常繁琐。
+这题的正解是，每一个节点a，其父亲都为a-x，x为小于a的最大的斐波那契数。
+证明显然，每次儿子的编号都是从父亲编号小到大，所以自然父亲和儿子差的也就是上一轮新增的儿子数了。
+应多加强对规律的探寻，多写多列举，也要用数学的方法推出来。
+</code></pre>
+<p>#P4281 [AHOI2008]紧急集合 / 聚会<br>
+https://www.luogu.com.cn/problem/P4281<br>
+这题也是LCA好题，我想了一个半小时，中间一度思维混乱想要睡觉（机房空调太暖和了）。总之，这题我的解法与正解大体相同，仅在最后计算答案时略显繁琐。<br>
+大概就是注意到x,y,z三点，LCA(x,y)与LCA(x,z)必在x到根的路径上，它们要么相同要么不同，而不同时为了使距离最短，应选取较深的那个点（因为反之则两点中间的距离会有两个点经过，这样只有一个，可以保证最优）。然后简单画一个树理解编写即可。<br>
+正解明天再写吧，题解还没看呢，我去睡觉了。。。。</p>
 
               </div>
               <div class="post-footer">
@@ -315,7 +488,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://xuyiyan920.github.io/post/zi-lu-flag/" title="自律flag">自律flag</a>
+      <a href="https://xuyiyan920.github.io/post/20201127-zong-jie/" title="2020.11.27总结">2020.11.27总结</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -328,15 +501,11 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="2020.11.27总结" href="https://xuyiyan920.github.io/post/20201127-zong-jie/">2020.11.27总结</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="2020.11.27总结" href="https://xuyiyan920.github.io/post/20201127-zong-jie/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="基本信息" href="https://xuyiyan920.github.io/post/ji-ben-xin-xi/">基本信息</a>
-        <a class="nav-mobile-next" title="基本信息" href="https://xuyiyan920.github.io/post/ji-ben-xin-xi/">下一篇</a>
+        <a class="nav-pc-next" title="自律flag" href="https://xuyiyan920.github.io/post/zi-lu-flag/">自律flag</a>
+        <a class="nav-mobile-next" title="自律flag" href="https://xuyiyan920.github.io/post/zi-lu-flag/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
